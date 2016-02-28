@@ -8,7 +8,7 @@ classdef Estado < handle
     methods
         
         function respuesta=es_igual_a(this, otro)
-            if this.nombre==otro.nombre
+            if strcmp(this.nombre,otro.nombre)
                 respuesta=true;
             else
                 respuesta=false;
