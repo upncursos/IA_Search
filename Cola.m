@@ -6,8 +6,10 @@ classdef Cola < handle
         function this=Cola()
             this.datos=[];
         end
-        function this=agregar(this, estado)
-            this.datos = [this.datos estado];
+        function this=agregar(this, estados)
+            for estado = estados
+                this.datos = [this.datos clonar(estado)];
+            end
         end
         function estado=tomar_estado(this)
             estado=this.datos(1);

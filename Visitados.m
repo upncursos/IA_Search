@@ -7,7 +7,7 @@ classdef Visitados < handle
     methods
         
         function this=agregar_estado_visitado(this,estado)
-            this.estados_visitados=[this.estados_visitados estado]; 
+            this.estados_visitados=[this.estados_visitados clonar(estado)]; 
         end
         
         function respuesta=contiene(this,estado)           
