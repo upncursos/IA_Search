@@ -1,85 +1,50 @@
-a=Estado();
-a.nombre='Arad'; %1
-b=Estado();
-b.nombre='Zerind'; %2
-c=Estado();
-c.nombre='Timisoara'; %3
-d=Estado();
-d.nombre='Sibiu'; %4
-e=Estado();
-e.nombre='Fagaras'; %5
-f=Estado();
-f.nombre='Bucarest'; %6
-g=Estado();
-g.nombre='Pitesti'; %7
-h=Estado();
-h.nombre='Rimnicu Vilcea'; %8
-i=Estado();
-i.nombre='Lugoj'; %9
-j=Estado();
-j.nombre='Mehadia'; %10
-k=Estado();
-k.nombre='Dobreta'; %11
-l=Estado();
-l.nombre='Craiova'; %12
-m=Estado();
-m.nombre='Oradea'; %13
 
-estados = [a b c d e f g h i j k l m];
+
+a=Estado();
+a.nombre='A';
+b=Estado();
+b.nombre='B';
+c=Estado();
+c.nombre='C';
+d=Estado();
+d.nombre='D';
+e=Estado();
+e.nombre='E';
+f=Estado();
+f.nombre='F';
+g=Estado();
+g.nombre='G';
+h=Estado();
+h.nombre='H';
+j=Estado();
+j.nombre='I';
+i=Estado();
+i.nombre='J';
+k=Estado();
+k.nombre='K';
+
+estados = [a b c d e f g h i j k];
 
 distancias = zeros(length(estados));
 
 distancias(1,2)=1;
-distancias(1,4)=1;
 distancias(1,3)=1;
-
-distancias(2,13)=1;
-distancias(2,1)=1;
-
-distancias(3,9)=1;
-distancias(3,1)=1;
-
-distancias(4,5)=1;
-distancias(4,8)=1;
-distancias(4,1)=1;
-distancias(4,13)=1;
-
-distancias(5,6)=1;
-distancias(5,4)=1;
-
-distancias(6,5)=1;
-distancias(6,7)=1;
-
+distancias(1,4)=1;
+distancias(2,5)=1;
+distancias(3,6)=1;
+distancias(4,7)=1;
+distancias(5,8)=1;
+distancias(6,9)=1;
 distancias(7,6)=1;
-distancias(7,8)=1;
-distancias(7,12)=1;
-
-
-distancias(8,7)=1;
-distancias(8,4)=1;
-distancias(8,12)=1;
-
-distancias(9,10)=1;
-distancias(9,3)=1;
-
-distancias(10,9)=1;
+distancias(7,9)=1;
+distancias(8,9)=1;
+distancias(8,10)=1;
+distancias(8,6)=1;
+distancias(9,11)=1;
 distancias(10,11)=1;
 
-distancias(11,10)=1;
-distancias(11,12)=1;
-
-distancias(12,7)=1;
-distancias(12,8)=1;
-distancias(12,11)=1;
-
-distancias(13,4)=1;
-distancias(13,2)=1;
-
-
-
-
 estado_actual=a;
-estado_final=l;
+estado_final=k;
 cola = Cola();
 visitados = Visitados();
 
