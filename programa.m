@@ -7,7 +7,7 @@ visitados = Visitados();
 while(~estado_actual.es_igual_a(estado_final))
 
     if ~visitados.contiene(estado_actual) 
-        estados_siguientes=generar_estados_siguientes(estado_actual,distancias,estados);
+        estados_siguientes=generar_estados_siguientes(estado_actual);
         cola.agregar(estados_siguientes);
         visitados.agregar_estado_visitado(estado_actual);
     end    
