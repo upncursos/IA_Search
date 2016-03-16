@@ -5,7 +5,7 @@ classdef Estado < handle
        canibales_orilla2=0;
        misioneros_orilla1=0;
        misioneros_orilla2=0;
-       bote=-1;
+       orilla=-1;
        antecesor=[];
     end
     
@@ -36,11 +36,11 @@ classdef Estado < handle
                     mensaje = [mensaje 'M'];
 
                 end
-                if this.bote==-1
+                if this.orilla==-1
                     mensaje = [mensaje 'X'];
                 end
                 
-                 mensaje = [mensaje ' / '];
+                 mensaje = [mensaje ' / ']
                 for i=1:this.canibales_orilla2
                     mensaje = [mensaje 'C'];
                 end
@@ -48,11 +48,11 @@ classdef Estado < handle
                     mensaje = [mensaje 'M'];
 
                 end
-                if this.bote==1
+                if this.orilla==1
                     mensaje = [mensaje 'X'];
                 end
             
-            disp(mensaje);
+            
         end
     end
     
