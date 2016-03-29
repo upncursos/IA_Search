@@ -1,20 +1,9 @@
 clear;
 clc;
 
-estado_actual=Estado();
-estado_actual.canibales_orilla1=3;
-estado_actual.misioneros_orilla1=3;
-estado_actual.canibales_orilla2=0;
-estado_actual.misioneros_orilla2=0;
-estado_actual.bote=-1;
+estado_actual=?
 
-estado_final=Estado();
-estado_final.canibales_orilla1=0;
-estado_final.misioneros_orilla1=0;
-estado_final.canibales_orilla2=3;
-estado_final.misioneros_orilla2=3;
-estado_final.bote=1;
-
+estado_final=?
 
 cola = Cola();
 visitados = Visitados();
@@ -32,7 +21,7 @@ while(~estado_actual.es_igual_a(estado_final))
     
 
 end
-mostrar_informacion(estado_final);
+
 mostrar_ruta_hacia(estado_actual);
 
 

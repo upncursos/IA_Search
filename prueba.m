@@ -11,6 +11,3 @@ disp('estados siguientes');
 s = generar_estados_siguientes(e);
 mostrar_informacion_estados(s);
 
-disp('estados siguientes');
-s = generar_estados_siguientes(s(2));
-mostrar_informacion_estados(s);
