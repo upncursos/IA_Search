@@ -12,7 +12,7 @@ classdef Estado < handle
     methods
         
         function respuesta=es_igual_a(this, otro)
-            if this.canibales_orilla1==otro.canibales_orilla1 && this.canibales_orilla2==otro.canibales_orilla2 && this.bote==otro.bote && this.misioneros_orilla1==otro.misioneros_orilla1 && this.misioneros_orilla2==otro.misioneros_orilla2
+            if this.cani
                 respuesta=true;
             else
                 respuesta=false;
